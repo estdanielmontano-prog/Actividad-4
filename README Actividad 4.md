@@ -2,8 +2,6 @@
 
 Práctica de Micros: la cámara del computador reconoce gestos de la mano con **MediaPipe Gesture Recognizer** y el programa en **Python** envía un comando por **UART (USB)** a una **ESP32**, que enciende tres LEDs con distintos niveles de intensidad (PWM) o ejecuta secuencias de luces.
 
-![Enunciado](docs/enunciado.png)
-
 ---
 
 ## 1. Objetivo
@@ -43,8 +41,6 @@ Cada LED va del pin indicado → resistencia de 220 Ω → ánodo; el cátodo va
 | Amarillo | GPIO25 | PWM (5 kHz, 8 bits) |
 | Azul | GPIO26 | PWM (5 kHz, 8 bits) |
 | Rojo | GPIO27 | PWM (5 kHz, 8 bits) |
-
-📷 *Coloca aquí la foto del montaje:* `docs/montaje.jpg`
 
 ## 4. Arquitectura
 
@@ -89,9 +85,6 @@ Actividad4_Gestos_LED/
 5. La clase `Enlace` escribe por serial solo cuando el comando cambia, sin saturar el puerto.
 6. Muestra en pantalla los gestos detectados y el último comando enviado. Se sale con la tecla `q`.
 
-## 7. Evidencias
-
-🎥 **Video de funcionamiento:** *(pega aquí el enlace del video)*
 
 ## Referencias
 - [MediaPipe Gesture Recognizer – demo web](https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/gesture_recognizer)
